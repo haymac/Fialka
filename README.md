@@ -168,7 +168,7 @@ C:\Users\User>
 
 ## Mode 2
 ### Parallel search WIF with continuation
-- **[How to use mode 2 + examples](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.md)**
+- **[How to use mode 2 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md)**
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.jpg "Fialka M-125")
 
 ## Mode 3
