@@ -139,9 +139,32 @@ C:\Users\User>
 ```
 
 ## Mode 1
-### Parallel Passphrases search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/2)
+### Random search WIF from puzzle 64 bit
+- VanitySearch Search the prefix 16jY7qLJ from a [puzzles 64 bits](https://privatekeys.pw/puzzles/bitcoin-puzzle-tx) 
+- Example WIF out:
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ
+- **KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW
+- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
+- We know that the private key corresponds to 64 bits. Therefore, set the -m 64 range limiter.
+- If the output private key is more or less than 64 bits, skip... 
+- For 256 bit range use -m 256 or other ranges skip...
+- -n ? number of random letters. If prefix 38 letters 52-38 = -n 14 (without сhecksum)
+- Run: ```Fialka.exe -t 6 -r 1 -f puzles.bin -s KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY -n 12 -m 64```
 
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r1.jpg "Fialka M-125")
 
 ## Mode 2
 ### Parallel Minikeys search with continuation
