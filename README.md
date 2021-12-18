@@ -8,7 +8,7 @@
 - It is important to sort the base160.bin file otherwise the Bloom search filter will not work as expected.
 - To SORT base160.bin use the program [RMD160-Sort.exe](https://github.com/phrutis/LostCoins/blob/main/Others/RMD160-Sort.exe) Сommand: ```RMD160-Sort.exe base160.bin hex160-Sort.bin``` 
 # Parametrs:
-Run: ```LostCoins.exe -h```
+Run: ```Fialka.exe -h```
 
 ```
 Usage: Fialka M-125 [options...]
