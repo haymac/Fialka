@@ -167,8 +167,9 @@ C:\Users\User>
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r1.jpg "Fialka M-125")
 
 ## Mode 2
-### Parallel Minikeys search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/3)
+### Parallel search WIF with continuation
+- **[How to use mode 2 + examples](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.md)**
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.jpg "Fialka M-125")
 
 ## Mode 3
 ### Parallel WIF search with continuation
