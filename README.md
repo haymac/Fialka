@@ -38,16 +38,16 @@ Options:
 - Compressed: abc, cop, run, zip
 - [Make your own](https://brainwalletx.github.io/) passphrase or minikeys for test
 - There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8 WIF: 
-- 4 WIF Uncomressed: 
-5JiznUZskJpwodP3SR85vx5JKeopA3QpTK63BuziW8RmGGyJg81 
-5KMdQbcUFS3PBbC6VgitFrFuaca3gBY4BJt4jpQ2YTNdPZ1CbuE 
-5HwfeuhdFscL9YTQCLT2952dieZEtKbzJ328b4CR1v6YUVLu2D7 
-5J9J63iW7s5p54T569qstediqNgBTLXpUmxUtQwsXTaHz3JCsKt
-- 4 WIF Compressed: 
-L3UBXym7JYcMX91ssLgZzS2MvxTxjU3VRf9S4jJWXVFdDi4NsLcm 
-L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF 
-L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG 
-KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj
+- 4 WIF Uncomressed: </br>
+5JiznUZskJpwodP3SR85vx5JKeopA3QpTK63BuziW8RmGGyJg81 </br>
+5KMdQbcUFS3PBbC6VgitFrFuaca3gBY4BJt4jpQ2YTNdPZ1CbuE </br>
+5HwfeuhdFscL9YTQCLT2952dieZEtKbzJ328b4CR1v6YUVLu2D7 </br>
+5J9J63iW7s5p54T569qstediqNgBTLXpUmxUtQwsXTaHz3JCsKt </br>
+- 4 WIF Compressed: </br>
+L3UBXym7JYcMX91ssLgZzS2MvxTxjU3VRf9S4jJWXVFdDi4NsLcm </br>
+L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF </br>
+L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG </br>
+KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj </br>
 - [Make your own](https://secretscan.org/PrivateKeyWif) WIF or HEX for test
 - For search Uncompressed WIF 5.. (51 length) use the **-b** parameter!
 
@@ -141,22 +141,22 @@ Bloom at 000001E224E704B0
 ### Random search WIF from puzzle 64 bit
 - VanitySearch Search the prefix 16jY7qLJ from a [puzzles 64 bits](https://privatekeys.pw/puzzles/bitcoin-puzzle-tx) 
 - Example WIF out:
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ
-**KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1 </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9 </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ </br>
+**KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6 </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW </br>
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK </br>
 - We know that the private key corresponds to 64 bits. Therefore, set the -m 64 range limiter.
 - If the output private key is more or less than 64 bits, skip... 
 - For 256 bit range use -m 256 or other ranges skip...
@@ -167,10 +167,18 @@ KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
 
 ## Mode 2
 ### Parallel search WIF with continuation
-- **[How to use mode 2 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md)**
+#### **[How to use mode 2 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md)**
+Run: ```Fialka.exe -t 6 -r 2 -f test.bin -m 64 -n 45``` 
+
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.jpg "Fialka M-125")
 
-## Mode 3-7
+## Mode 3
+### Parallel search Passphrases with continuation + Filter
+#### **[How to use mode 3 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r3.md)**
+Run: ```Fialka.exe -t 6 -r 3 -f test.bin -n 60``` 
+
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r3.jpg "Fialka M-125")
+
 ## In the process of adding!
 
 ## Mode 7
