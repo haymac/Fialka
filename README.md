@@ -139,9 +139,18 @@ Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60```
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r5.jpg "Fialka M-125")
 
 
+## Mode 6
+### Parallel search WIF with continuation (without range limiter -m)
+#### Similar [settings as in mode 2](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md) without range limiter -m
+Run: ```Fialka.exe -t 6 -r 6 -f test.bin -n 45``` 
 
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r6.jpg "Fialka M-125")
 
 ## Mode 7
+### Parallel search Minikeys S.. with continuation
+
+
+## Mode 8
 ### GPU Parallel WIF search with continuation
 - [*How to use + examples*](https://github.com/phrutis/Fialka/issues/8)
 
