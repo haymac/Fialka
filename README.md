@@ -14,42 +14,44 @@ Run: ```Fialka.exe -h```
 Usage: Fialka [options...]
 Options:
     -v, --version          Print version. For help visit https://github.com/phrutis/Fialka
-    -c, --check            Disabled Check the working of the code Fialka
-    -u, --uncomp           Search only uncompressed addresses
+    -u, --uncomp           Search only uncompressed addresses 
     -b, --both             Search both (uncompressed and compressed addresses)
     -g, --gpu              Enable GPU calculation
     -i, --gpui             GPU ids: 0,1...: List of GPU(s) to use, default is 0
     -x, --gpux             GPU gridsize: g0x,g0y,g1x,g1y, ...: Specify GPU(s) kernel gridsize, default is 8*(MP number),128
-    -t, --thread           Number of cores and threads
+    -t, --thread           CPU number of cores and threads
     -o, --out              Outputfile: Output results to the specified file, default: Found.txt
     -m, --max              Disabled -m  1-10000 For GPU: Reloads random started hashes every billions in counter. Default: 100 billion
     -s, --seed             Text file name or other
     -z, --zez              Additional meaning or other
     -e, --nosse            Disable SSE hash function
-    -l, --list             List cuda enabled devices
     -r, --rkey             Number of Modes
     -n, --nbit             Number of letters or other
-    -f, --file             RIPEMD160 binary SORT hash file path with addresses 1 ..
-    -k, --color            Disabled Text color: -k 1-255 Recommended 3, 10, 11, 14, 15 (default: -k 15)
+    -f, --file             RIPEMD160 binary SORT hash file path with addresses 1... 
     -h, --help             Shows this page
  ```
 ## Mode 0 
 ### Search Passphrases
 - [Use old databases or a generator to create Passphrases, Minikeys, WIF, HEX](https://github.com/phrutis/LostCoins/blob/main/Others/Modes.md) 
-- The list of found passphrases is [here](https://privatekeys.pw/brainwallet/bitcoin/1) and [here](https://allprivatekeys.com/hacked-brainwallets-with-balance)
+- The list of Found passphrases is [here](https://privatekeys.pw/brainwallet/bitcoin/1) and [here](https://allprivatekeys.com/hacked-brainwallets-with-balance)
 - There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8 words of 3 letters 
-- Uncomressed: cat, gaz, for, car Compressed: abc, cop, run, zip. 
+- Uncomressed: cat, gaz, for, car 
+- Compressed: abc, cop, run, zip
 - [Make your own](https://brainwalletx.github.io/) passphrase or minikeys for test
 - There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8: 
-- 4 WIF Uncomressed: 5JiznUZskJpwodP3SR85vx5JKeopA3QpTK63BuziW8RmGGyJg81 
-- 5KMdQbcUFS3PBbC6VgitFrFuaca3gBY4BJt4jpQ2YTNdPZ1CbuE 
-- 5HwfeuhdFscL9YTQCLT2952dieZEtKbzJ328b4CR1v6YUVLu2D7 
-- 5J9J63iW7s5p54T569qstediqNgBTLXpUmxUtQwsXTaHz3JCsKt
-- 4 WIF Compressed: L3UBXym7JYcMX91ssLgZzS2MvxTxjU3VRf9S4jJWXVFdDi4NsLcm 
-- L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF 
-- L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG 
-- KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj
+- 4 WIF Uncomressed: 
+5JiznUZskJpwodP3SR85vx5JKeopA3QpTK63BuziW8RmGGyJg81 
+5KMdQbcUFS3PBbC6VgitFrFuaca3gBY4BJt4jpQ2YTNdPZ1CbuE 
+5HwfeuhdFscL9YTQCLT2952dieZEtKbzJ328b4CR1v6YUVLu2D7 
+5J9J63iW7s5p54T569qstediqNgBTLXpUmxUtQwsXTaHz3JCsKt
+- 4 WIF Compressed: 
+L3UBXym7JYcMX91ssLgZzS2MvxTxjU3VRf9S4jJWXVFdDi4NsLcm 
+L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF 
+L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG 
+KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj
 - [Make your own](https://secretscan.org/PrivateKeyWif) WIF or HEX for test
+- To search for Uncompressed WIF 5.. (51 length) use the **-b** parameter!
+
 ### Find Passphrases, minikeys and Privat keys from a text file
 - Work only in CPU
 - -t ? how many cores (threads) to use? 1-11 max
@@ -71,7 +73,7 @@ Options:
 
 #### To search for Private keys WIF
  - For WIF **ONLY !** letters and symbols Base58 (ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz123456789)
- - For WIF The first letter must be L... (length 52) and K... (length 52) or 5... (length 51) 
+ - For WIF The first letter must be L... (length 52) and K... (length 52) or 5... (length 51) if 5.. WIF is listed use **-b**
  - Run: ```Fialka.exe -t 1 -r 0 -s Private-keys-wif.txt -z WIF -f test.bin```
 
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/0wif.jpg "Fialka M-125")
@@ -110,7 +112,7 @@ Bloom at 000001E224E704B0
   Rotor       : Loading Private keys (HEX) from file: private-keys.txt ...ok
   Loaded      : 31510509 HEX private keys
   Rotor       : For files up to 100,000 use -t 1 For large file max to 2,147,483,647 lines use -t 1-11 max
-  Site        : https://github.com/phrutis/WIF
+  Site        : https://github.com/phrutis/Fialka
   Donate      : bc1qh2mvnf5fujg93mwl8pe688yucaw9sflmwsukz9
 
   [00:01:31] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f0961fea] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F0961FEA] [CPU: 264,22 Kk/s] [F: 0] [T: 17,946,027] [Skip: 0]
@@ -134,30 +136,28 @@ Bloom at 000001E224E704B0
   [00:02:55] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f10dfb8a] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F10DFB8A] [CPU: 277,55 Kk/s] [F: 3] [T: 41,123,450] [Skip: 0]
   Search is Finish! Found: 3
 
-
-C:\Users\User>
 ```
 
 ## Mode 1
 ### Random search WIF from puzzle 64 bit
 - VanitySearch Search the prefix 16jY7qLJ from a [puzzles 64 bits](https://privatekeys.pw/puzzles/bitcoin-puzzle-tx) 
 - Example WIF out:
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ
-- **KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW
-- KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ
+**KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW
+KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
 - We know that the private key corresponds to 64 bits. Therefore, set the -m 64 range limiter.
 - If the output private key is more or less than 64 bits, skip... 
 - For 256 bit range use -m 256 or other ranges skip...
