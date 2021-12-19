@@ -1,5 +1,4 @@
 # Fialka M-125
-# WORK IN PROGRESS
 ![alt text](https://raw.githubusercontent.com/phrutis/LostCoins/main/Others/4.jpg "Fialka M-125")
 - This is a modified version [LostCoins](https://github.com/phrutis/LostCoins/) 
 - Huge thanks [kanhavishva](https://github.com/kanhavishva) and to all developers whose codes were used in Fialka M-125.
@@ -80,62 +79,8 @@ KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj </br>
 #### To search for Private keys HEX
  - For HEX use only 0,1,3,4,5,6,7,8,9,a,b,c,d,e,f length 1-64 max)
  - Run: ```Fialka.exe -t 1 -r 0 -s Private-keys-hex.txt -z HEX -f test.bin```
-```
-C:\Users\User>Fialka.exe -t 11 -r 0 -s private-keys.txt -z HEX -f test.bin
-
- Fialka M-125 (18.12.2021)
-
- SEARCH MODE  : COMPRESSED
- DEVICE       : CPU
- CPU THREAD   : 11
- GPU IDS      : 0
- GPU GRIDSIZE : -1x128
- HASH160 FILE : test.bin
- OUTPUT FILE  : Found.txt
-
- Loading      : 100 %
- Loaded       : 75,471 address
-
-Bloom at 000001E224E704B0
-  Version     : 2.1
-  Entries     : 150942
-  Error       : 0,0000010000
-  Bits        : 4340363
-  Bits/Elem   : 28,755175
-  Bytes       : 542546 (0 MB)
-  Hash funcs  : 20
-
-  Start Time  : Sat Dec 18 20:30:04 2021
-
-  Random mode : 0
-  Rotor       : Loading Private keys (HEX) from file: private-keys.txt ...ok
-  Loaded      : 31510509 HEX private keys
-  Rotor       : For files up to 100,000 use -t 1 For large file max to 2,147,483,647 lines use -t 1-11 max
-  Site        : https://github.com/phrutis/Fialka
-  Donate      : bc1qh2mvnf5fujg93mwl8pe688yucaw9sflmwsukz9
-
-  [00:01:31] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f0961fea] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F0961FEA] [CPU: 264,22 Kk/s] [F: 0] [T: 17,946,027] [Skip: 0]
-  =================================================================================
-  * PubAddress: 15KqNGHFEViRS4WTYYJ4TRoDtSXH5ESzW9                                *
-  * Priv(WIF) : p2pkh:L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF        *
-  * Priv(HEX) : B1C02B717C94BD4243E83B5E98BA37FB273BC035E4AD8FC438EA4D07A1043F56  *
-  =================================================================================
-  [00:01:38] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f0a128fe] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F0A128FD] [CPU: 261,62 Kk/s] [F: 1] [T: 19,934,800] [Skip: 0]
-  =================================================================================
-  * PubAddress: 14Nmb7rFFLdZhKaud5h7nDSLFQfma7JCz2                                *
-  * Priv(WIF) : p2pkh:L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG        *
-  * Priv(HEX) : ACBA25512100F80B56FC3CCD14C65BE55D94800CDA77585C5F41A887E398F9BE  *
-  =================================================================================
-  [00:01:42] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f0a652be] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F0A652BE] [CPU: 270,48 Kk/s] [F: 2] [T: 21,094,591] [Skip: 0]
-  =================================================================================
-  * PubAddress: 1PoQRMsXyQFSqCCRek7tt7umfRkJG9TY8x                                *
-  * Priv(WIF) : p2pkh:L3UBXym7JYcMX91ssLgZzS2MvxTxjU3VRf9S4jJWXVFdDi4NsLcm        *
-  * Priv(HEX) : BA7816BF8F01CFEA414140DE5DAE2223B00361A396177A9CB410FF61F20015AD  *
-  =================================================================================
-  [00:02:55] [ba7816bf8f01c0ea414140de5dae2223b00061a396177a9cb410ff61f10dfb8a] [BA7816BF8F01C0EA414140DE5DAE2223B00061A396177A9CB410FF61F10DFB8A] [CPU: 277,55 Kk/s] [F: 3] [T: 41,123,450] [Skip: 0]
-  Search is Finish! Found: 3
-
-```
+ 
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r0hex.jpg "Fialka M-125")
 
 ## Mode 1
 ### Random search WIF from puzzle 64 bit
@@ -179,7 +124,22 @@ Run: ```Fialka.exe -t 6 -r 3 -f test.bin -n 60```
 
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r3.jpg "Fialka M-125")
 
-## In the process of adding!
+## Mode 4
+### Parallel search Passphrases with continuation + Filter
+#### **[How to use mode 4 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r4.md)**
+Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60``` 
+
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r4.jpg "Fialka M-125")
+
+## Mode 5
+### Parallel search Passphrases with continuation + Filter
+#### **[How to use mode 5 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r5.md)**
+Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60``` 
+
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r5.jpg "Fialka M-125")
+
+
+
 
 ## Mode 7
 ### GPU Parallel WIF search with continuation
