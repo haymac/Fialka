@@ -11,7 +11,7 @@
 Run: ```Fialka.exe -h```
 
 ```
-Usage: Fialka [options...]
+Usage: Fialka M-125 [options...]
 Options:
     -v, --version          Print version. For help visit https://github.com/phrutis/Fialka
     -u, --uncomp           Search only uncompressed addresses 
@@ -20,8 +20,8 @@ Options:
     -i, --gpui             GPU ids: 0,1...: List of GPU(s) to use, default is 0
     -x, --gpux             GPU gridsize: g0x,g0y,g1x,g1y, ...: Specify GPU(s) kernel gridsize, default is 8*(MP number),128
     -t, --thread           CPU number of cores and threads
-    -o, --out              Outputfile: Output results to the specified file, default: Found.txt
-    -m, --max              Disabled -m  1-10000 For GPU: Reloads random started hashes every billions in counter. Default: 100 billion
+    -o, --out              Output results Found to the specified text file. Default: Found.txt
+    -m, --max              -m 1-256 Range bit limiter
     -s, --seed             Text file name or other
     -z, --zez              Additional meaning or other
     -e, --nosse            Disable SSE hash function
@@ -31,14 +31,13 @@ Options:
     -h, --help             Shows this page
  ```
 ## Mode 0 
-### Search Passphrases
-- [Use old databases or a generator to create Passphrases, Minikeys, WIF, HEX](https://github.com/phrutis/LostCoins/blob/main/Others/Modes.md) 
+- [Use old databases or a generator to create list Passphrases, Minikeys, WIF, HEX](https://github.com/phrutis/LostCoins/blob/main/Others/Modes.md) 
 - The list of Found passphrases is [here](https://privatekeys.pw/brainwallet/bitcoin/1) and [here](https://allprivatekeys.com/hacked-brainwallets-with-balance)
 - There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8 words of 3 letters 
 - Uncomressed: cat, gaz, for, car 
 - Compressed: abc, cop, run, zip
 - [Make your own](https://brainwalletx.github.io/) passphrase or minikeys for test
-- There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8: 
+- There is a ready-made file [test.bin](https://github.com/phrutis/Fialka/blob/main/Others/test.bin) inside 8 WIF: 
 - 4 WIF Uncomressed: 
 5JiznUZskJpwodP3SR85vx5JKeopA3QpTK63BuziW8RmGGyJg81 
 5KMdQbcUFS3PBbC6VgitFrFuaca3gBY4BJt4jpQ2YTNdPZ1CbuE 
@@ -50,7 +49,7 @@ L3BEabkqcsppnTdzAWiizPEuf3Rvr8QEac21uRVsYb9hjesWBxuF
 L31UCqx296TVRtgpCJspQJYHkwUeA4o3a2pvYKwRrCCAmi2NirDG 
 KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj
 - [Make your own](https://secretscan.org/PrivateKeyWif) WIF or HEX for test
-- To search for Uncompressed WIF 5.. (51 length) use the **-b** parameter!
+- For search Uncompressed WIF 5.. (51 length) use the **-b** parameter!
 
 ### Find Passphrases, minikeys and Privat keys from a text file
 - Work only in CPU
@@ -171,21 +170,8 @@ KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK
 - **[How to use mode 2 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md)**
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r2.jpg "Fialka M-125")
 
-## Mode 3
-### Parallel WIF search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/4)
-
-## Mode 4
-### Parallel Passphrases search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/5)
-
-## Mode 5
-### Parallel Passphrases search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/6)
-
-## Mode 6
-### Parallel Passphrases search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/7)
+## Mode 3-7
+## In the process of adding!
 
 ## Mode 7
 ### GPU Parallel WIF search with continuation
