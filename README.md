@@ -148,7 +148,11 @@ Run: ```Fialka.exe -t 6 -r 6 -f test.bin -n 45```
 
 ## Mode 7
 ### Parallel search Minikeys S.. with continuation
+Create file Minikeys.txt 
+Add Minikeys S... (22) or S.. (30) on a new line. One line = 1 thread (-t 1) max -t 64</br> 
+Run: ```Fialka.exe -t 6 -r 7 -f test.bin```
 
+![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r7.jpg "Fialka M-125")
 
 ## Mode 8
 ### GPU Parallel WIF search with continuation
