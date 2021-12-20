@@ -125,7 +125,7 @@ Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60```
 ## Mode 5
 ### Parallel search Passphrases with continuation + Filter
 #### **[How to use mode 5 + examples](https://github.com/phrutis/Fialka/blob/main/Others/img/r5.md)**
-Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60``` 
+Run: ```Fialka.exe -t 6 -r 5 -f test.bin -n 60``` 
 
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r5.jpg "Fialka M-125")
 
