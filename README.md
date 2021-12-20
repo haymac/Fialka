@@ -89,19 +89,10 @@ KyiR31LZTQ2hk1DRxEticnsQCA8tjFZcgJiKNaRArZME5fpfAjWj </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYvQqYKVuZryGJLxfH1P </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwJvoHMhmXgVkKmTcAx </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwYTCAfXHKuFsZ2stFG </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwdn9fqLaBQKZTm2aUS </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwfF8kXepG8TvxzjXag </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwxvkRPWm5vSDofLME1 </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYwyWFyQr5iVJkTvXccg </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYzMHHGVeYFPidEza7Td </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ1pdCSxTJsQuadcciW9 </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ2u4BA8jvgN3gncqUhT </br>
 KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ3hA1yqkkqoyqype3pQ </br>
 **KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CZMY**vJden3dEAzBrN </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4CvxzWeetic2u7gUbg </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ4ZfAVpwMaXB9RCuyN6 </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ5gJ1Z6ViyQfs1XPAbW </br>
-KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qZ6QmTJSSvicVo9Le8ZK </br>
 - We know that the private key corresponds to 64 bits. Therefore, set the -m 64 range limiter.
 - If the output private key is more or less than 64 bits, skip... 
 - For 256 bit range use -m 256 or other ranges skip...
@@ -138,7 +129,6 @@ Run: ```Fialka.exe -t 6 -r 4 -f test.bin -n 60```
 
 ![alt text](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r5.jpg "Fialka M-125")
 
-
 ## Mode 6
 ### Parallel search WIF with continuation (without range limiter -m)
 #### Similar [settings as in mode 2](https://github.com/phrutis/Fialka/blob/main/Others/img/r2.md) without range limiter -m
@@ -156,13 +146,13 @@ Run: ```Fialka.exe -t 6 -r 7 -f test.bin```
 
 ## Mode 8
 ### GPU Parallel WIF search with continuation
-- [*How to use + examples*](https://github.com/phrutis/Fialka/issues/8)
+Create a text file WIF.txt with 65536 WIF on a new line. </br>
+Run: ```Fialka.exe -t 0 -g -i 0 -x 256,256 -r 8 -f test.bin```
 
+![Mode 8 Example](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r7.jpg "Fialka M-125")
 
 ## VanitySearch special edition for Fialka M-125
 [*Example search WIF*](https://github.com/phrutis/Fialka/issues/1)
-
-
 
 ## Building
 - Microsoft Visual Studio Community 2019
