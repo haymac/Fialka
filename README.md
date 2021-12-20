@@ -1,4 +1,4 @@
-# Fialka M-125
+# Fialka [M-125](https://en.wikipedia.org/wiki/Fialka)
 ![alt text](https://raw.githubusercontent.com/phrutis/LostCoins/main/Others/4.jpg "Fialka M-125")
 - This is a modified version [LostCoins](https://github.com/phrutis/LostCoins/) 
 - Huge thanks [kanhavishva](https://github.com/kanhavishva) and to all developers whose codes were used in Fialka M-125.
@@ -149,10 +149,23 @@ Run: ```Fialka.exe -t 6 -r 7 -f test.bin```
 Create a text file WIF.txt with 65536 WIF on a new line. </br>
 Run: ```Fialka.exe -t 0 -g -i 0 -x 256,256 -r 8 -f test.bin```
 
-![Mode 8 Example](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r7.jpg "Fialka M-125")
+![Mode 8 Example](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/r8.jpg "Fialka M-125")
 
-## VanitySearch special edition for Fialka M-125
-[*Example search WIF*](https://github.com/phrutis/Fialka/issues/1)
+# VanitySearch special edition for Fialka M-125
+Example address [puzzle 64](https://privatekeys.pw/puzzles/bitcoin-puzzle-tx) **16jY7qLJnxb7CHZyqBP8qca9d51gAjyXQN** </br>
+The longer the prefix found, the more accurate the WIF </br>
+You can specify the exact range for the WIF search. </br>
+Use start and finish options to randomize between them. </br>
+The output creates 2 next files Found.txt and NEW-WIF.txt (only WIF sorted)</br>
+
+Search WIF from prefix **16jY7qLJn**</br>
+Run: ```VanitySearch.exe -t 0 -gpu -g 256,256 -r 25000 -start 8000000000000000 -finish ffffffffffffffff -o Found.txt 16jY7qLJn```</br></br>
+Search WIF from prefix **16jY7qLJnx**</br>
+Run: ```VanitySearch.exe -t 0 -gpu -g 256,256 -r 25000 -start 8000000000000000 -finish ffffffffffffffff -o Found.txt 16jY7qLJnx```</br></br>
+Search WIF from prefix **16jY7qLJnxb**</br>
+Run: ```VanitySearch.exe -t 0 -gpu -g 256,256 -r 25000 -start 8000000000000000 -finish 9000000000000000 -o Found.txt 16jY7qLJnxb```
+
+![Mode 8 Example](https://raw.githubusercontent.com/phrutis/Fialka/main/Others/img/vanitysearch.jpg "Fialka M-125")
 
 ## Building
 - Microsoft Visual Studio Community 2019
